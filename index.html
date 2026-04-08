@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BWJ東京2026 | URURIAマシン体験事前予約</title>
+<meta name="description" content="BWJ東京2026 URURIAブース（西2 J007）。plasmania・it Liftの体験は事前予約がおすすめ。今ならベイビーエクソフェイスパック3枚プレゼント。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Cormorant+Garamond:wght@500;700&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Noto Sans JP',sans-serif;
+  color:#3a2548;
+  background:#fff;
+  line-height:1.85;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  font-size:15px;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+
+/* ========== HERO ========== */
+.hero{
+  position:relative;
+  padding:70px 22px 48px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:
+    radial-gradient(ellipse at top,#ffe5f1 0%,transparent 60%),
+    radial-gradient(ellipse at bottom,#ece0fb 0%,transparent 65%),
+    linear-gradient(180deg,#fff 0%,#fff5fa 50%,#fff 100%);
+  overflow:hidden;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  top:-80px;
+  right:-80px;
+  width:240px;
+  height:240px;
+  border-radius:50%;
+  background:radial-gradient(circle,#ffd1e6 0%,transparent 70%);
+  filter:blur(20px);
+  pointer-events:none;
+}
+.hero::after{
+  content:"";
+  position:absolute;
+  bottom:-60px;
+  left:-60px;
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  background:radial-gradient(circle,#dccdf6 0%,transparent 70%);
+  filter:blur(20px);
+  pointer-events:none;
+}
+.hero-badge{
+  display:inline-block;
+  font-family:'Orbitron',sans-serif;
+  font-size:11px;
+  letter-spacing:0.32em;
+  color:#ff4d9d;
+  margin-bottom:22px;
+  position:relative;
+  z-index:1;
+  font-weight:700;
+}
+.hero-badge::before,.hero-badge::after{
+  content:"";
+  display:inline-block;
+  width:32px;
+  height:1px;
+  background:#ff4d9d;
+  vertical-align:middle;
+  margin:0 12px;
+}
+.hero h1{
+  position:relative;
+  z-index:1;
+  font-size:27px;
+  font-weight:900;
+  line-height:1.45;
+  margin-bottom:18px;
+  color:#2a1838;
+}
+.hero h1 .accent{
+  background:linear-gradient(90deg,#ff4d9d 0%,#b89cd6 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero p.lead{
+  position:relative;
+  z-index:1;
+  font-size:14px;
+  color:#7a5e90;
+  margin-bottom:36px;
+  font-weight:500;
+}
+.hero-cta{
+  position:relative;
+  z-index:1;
+  font-size:13px;
+  padding:6px 4px 10px;
+  color:#3a2548;
+  letter-spacing:0.12em;
+  border-bottom:1px solid #ff4d9d;
+  font-weight:600;
+}
+
+/* ========== SECTION ========== */
+section{padding:48px 22px}
+.container{max-width:560px;margin:0 auto}
+.section-title{
+  text-align:center;
+  font-size:23px;
+  font-weight:900;
+  line-height:1.5;
+  margin-bottom:32px;
+  letter-spacing:0.02em;
+  color:#2a1838;
+}
+.section-title small{
+  display:block;
+  font-size:11px;
+  color:#ff4d9d;
+  letter-spacing:0.28em;
+  margin-bottom:10px;
+  font-weight:700;
+  font-family:'Orbitron',sans-serif;
+}
+
+/* ========== MACHINE CARDS ========== */
+.machines{
+  background:linear-gradient(180deg,#fff 0%,#fff5fa 100%);
+}
+.machine-grid{
+  display:flex;
+  flex-direction:column;
+  gap:48px;
+}
+.machine-card{
+  position:relative;
+  display:block;
+  color:#3a2548;
+}
+.machine-card .body{padding:0 4px}
+.machine-header{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:20px;
+}
+.machine-header-text{
+  flex:1;
+  min-width:0;
+}
+.machine-image{
+  flex:0 0 38%;
+  aspect-ratio:1/1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.machine-image img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+.machine-header .jp-name{margin-bottom:0}
+.machine-tag{
+  display:inline-block;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:0.32em;
+  margin-bottom:14px;
+  font-family:'Orbitron',sans-serif;
+  color:#ff4d9d;
+}
+.machine-card .sub{
+  font-size:13px;
+  font-weight:600;
+  margin-bottom:6px;
+  color:#7a5e90;
+}
+.machine-card h3{
+  font-size:34px;
+  font-weight:900;
+  margin-bottom:4px;
+  line-height:1.05;
+  letter-spacing:0.01em;
+  background:linear-gradient(90deg,#ff4d9d 0%,#b89cd6 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-family:'Cormorant Garamond',serif;
+}
+.machine-card .jp-name{
+  display:block;
+  font-size:16px;
+  font-weight:700;
+  margin-top:8px;
+  margin-bottom:18px;
+  letter-spacing:0.08em;
+  color:#ff4d9d;
+}
+.machine-card p{
+  font-size:14px;
+  margin-bottom:22px;
+  line-height:1.95;
+  color:#5a4068;
+}
+
+/* before/after slider */
+.ba-slider{
+  margin-bottom:24px;
+  border-radius:18px;
+  overflow:hidden;
+  position:relative;
+  aspect-ratio:4/3;
+  background:linear-gradient(135deg,#fff5fa,#f4ecfb);
+}
+.ba-slide{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  transition:opacity .8s ease;
+  overflow:hidden;
+}
+.ba-slide::before{
+  content:'';
+  position:absolute;
+  inset:-30px;
+  background-image:var(--bg);
+  background-size:cover;
+  background-position:center;
+  filter:blur(32px) brightness(1.05) saturate(1.1);
+  z-index:0;
+}
+.ba-slide::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(135deg,rgba(255,255,255,0.18),rgba(244,236,251,0.22));
+  z-index:1;
+  pointer-events:none;
+}
+.ba-slide.active{opacity:1}
+.ba-slide img{
+  position:relative;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  z-index:2;
+}
+.ba-label{
+  position:absolute;
+  top:10px;
+  left:10px;
+  z-index:50;
+  font-family:'Orbitron',sans-serif;
+  font-size:8px;
+  letter-spacing:0.2em;
+  padding:4px 9px;
+  background:#ff4d9d;
+  color:#fff;
+  border-radius:50px;
+  font-weight:700;
+  box-shadow:0 2px 8px rgba(0,0,0,0.18);
+  pointer-events:none;
+}
+
+.machine-link{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  width:100%;
+  padding:18px 22px;
+  margin-top:8px;
+  font-weight:800;
+  font-size:15px;
+  color:#fff;
+  background:linear-gradient(90deg,#ff4d9d 0%,#b89cd6 100%);
+  border-radius:50px;
+  letter-spacing:0.04em;
+  box-shadow:0 8px 24px rgba(255,77,157,0.28);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.machine-link:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 30px rgba(255,77,157,0.36);
+}
+
+/* ========== BENEFIT ========== */
+.benefit{
+  background:
+    radial-gradient(ellipse at center top,#ffe5f1 0%,transparent 65%),
+    radial-gradient(ellipse at center bottom,#ece0fb 0%,transparent 65%),
+    #fff;
+  text-align:center;
+}
+.benefit-label{
+  display:inline-block;
+  font-size:11px;
+  letter-spacing:0.28em;
+  color:#ff4d9d;
+  margin-bottom:18px;
+  font-family:'Orbitron',sans-serif;
+  font-weight:700;
+  position:relative;
+}
+.benefit-label::before,.benefit-label::after{
+  content:"";
+  display:inline-block;
+  width:24px;
+  height:1px;
+  background:#ff4d9d;
+  vertical-align:middle;
+  margin:0 10px;
+}
+.benefit h2{
+  display:inline-block;
+  font-size:26px;
+  font-weight:900;
+  line-height:1.4;
+  margin-bottom:24px;
+  letter-spacing:0.08em;
+  background:linear-gradient(90deg,#ff4d9d 0%,#b89cd6 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  position:relative;
+  padding:0 22px;
+}
+.benefit h2::before,.benefit h2::after{
+  content:"";
+  position:absolute;
+  top:50%;
+  width:14px;
+  height:2px;
+  background:linear-gradient(90deg,#ff4d9d,#b89cd6);
+  border-radius:2px;
+}
+.benefit h2::before{left:0}
+.benefit h2::after{right:0}
+.benefit h2 .pink{
+  background:linear-gradient(90deg,#ff4d9d,#b89cd6);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.benefit-image{
+  margin:8px auto 18px;
+  border-radius:18px;
+  overflow:hidden;
+  max-width:480px;
+}
+.benefit-image img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.benefit p{
+  font-size:12px;
+  color:#a890c0;
+}
+
+/* ========== EVENT INFO ========== */
+.event-info{
+  background:linear-gradient(180deg,#fff5fa 0%,#fff 100%);
+  text-align:center;
+  padding-bottom:24px;
+}
+.event-info .label{
+  display:inline-block;
+  font-family:'Orbitron',sans-serif;
+  font-size:11px;
+  letter-spacing:0.28em;
+  color:#ff4d9d;
+  margin-bottom:18px;
+  font-weight:700;
+}
+.event-info .label::before,.event-info .label::after{
+  content:"";
+  display:inline-block;
+  width:24px;
+  height:1px;
+  background:#ff4d9d;
+  vertical-align:middle;
+  margin:0 10px;
+}
+.event-info h2{
+  font-size:32px;
+  font-weight:900;
+  margin-bottom:18px;
+  color:#2a1838;
+  font-family:'Cormorant Garamond',serif;
+  letter-spacing:0.02em;
+  background:linear-gradient(90deg,#ff4d9d,#b89cd6);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.event-info .date{
+  font-size:20px;
+  font-weight:900;
+  margin-bottom:10px;
+  color:#2a1838;
+}
+.event-info .location{
+  font-size:13px;
+  color:#7a5e90;
+  letter-spacing:0.04em;
+  line-height:2;
+}
+
+/* ========== BOOTH SECTION ========== */
+.booth-section{
+  background:linear-gradient(180deg,#fff,#fff5fa);
+  text-align:center;
+  padding-top:24px;
+}
+.booth-section .sub{
+  display:inline-block;
+  font-family:'Orbitron',sans-serif;
+  font-size:11px;
+  color:#ff4d9d;
+  letter-spacing:0.28em;
+  margin-bottom:12px;
+}
+.booth-section h2{
+  font-size:21px;
+  font-weight:900;
+  color:#2a1838;
+  margin-bottom:22px;
+  line-height:1.6;
+  word-break:keep-all;
+  overflow-wrap:break-word;
+}
+.booth-image{
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 10px 40px rgba(184,156,214,0.25);
+  margin-bottom:16px;
+}
+.booth-image img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.booth-section .caption{
+  font-size:13px;
+  color:#7a5e90;
+  letter-spacing:0.06em;
+}
+
+/* ========== RESERVATION ========== */
+.reservation{
+  background:
+    radial-gradient(ellipse at top,#ffe5f1 0%,transparent 60%),
+    radial-gradient(ellipse at bottom,#ece0fb 0%,transparent 60%),
+    #fff;
+  text-align:center;
+}
+.reservation .sub{
+  font-size:11px;
+  color:#ff4d9d;
+  letter-spacing:0.28em;
+  margin-bottom:14px;
+  display:block;
+  font-family:'Orbitron',sans-serif;
+  font-weight:700;
+}
+.reservation h2{
+  font-size:21px;
+  font-weight:900;
+  margin-bottom:24px;
+  color:#2a1838;
+}
+.reservation p{
+  font-size:14px;
+  line-height:2.1;
+  color:#5a4068;
+}
+.reservation .keyword{
+  display:inline-block;
+  padding:2px 14px;
+  background:linear-gradient(90deg,#ffe5f1,#ece0fb);
+  border-radius:6px;
+  font-weight:900;
+  color:#ff4d9d;
+  margin:6px 0;
+  letter-spacing:0.05em;
+}
+
+/* ========== FOOTER ========== */
+footer{
+  background:#fff5fa;
+  padding:36px 20px;
+  text-align:center;
+  font-size:11px;
+  color:#a890c0;
+}
+footer .brand{
+  font-family:'Orbitron',sans-serif;
+  font-size:16px;
+  color:#ff4d9d;
+  letter-spacing:0.32em;
+  margin-bottom:10px;
+  font-weight:700;
+}
+
+/* fade-in */
+.fade-in{
+  opacity:0;
+  transform:translateY(20px);
+  transition:opacity .8s,transform .8s;
+}
+.fade-in.show{opacity:1;transform:translateY(0)}
+
+/* ========== TABLET / DESKTOP ========== */
+@media(min-width:768px){
+  body{font-size:16px}
+  .hero{padding:100px 30px 70px}
+  .hero h1{font-size:42px;margin-bottom:22px}
+  .hero p.lead{font-size:17px;margin-bottom:42px}
+  .hero-badge{font-size:13px;margin-bottom:32px}
+  section{padding:72px 30px}
+  .container{max-width:760px}
+  .section-title{font-size:32px;margin-bottom:42px}
+  .section-title small{font-size:13px}
+  .machine-grid{gap:60px}
+  .machine-card h3{font-size:60px}
+  .machine-card .jp-name{font-size:18px}
+  .machine-card p{font-size:15px}
+  .benefit h2{font-size:28px}
+  .event-info h2{font-size:44px}
+  .event-info .date{font-size:26px}
+  .event-info .location{font-size:15px}
+  .reservation h2{font-size:28px}
+  .reservation p{font-size:16px}
+}
+@media(min-width:980px){
+  .container{max-width:1080px}
+  .machine-grid{flex-direction:row;gap:60px}
+  .machine-grid > .machine-card{flex:1;display:flex;flex-direction:column}
+  .machine-card .body{flex:1;display:flex;flex-direction:column}
+  .machine-card .body p{flex:1}
+  .hero h1{font-size:54px}
+  .section-title{font-size:36px}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="hero-badge">BWJ TOKYO 2026</span>
+  <h1>
+    URURIAマシン体験は<br>
+    <span class="accent">事前予約がおすすめ！</span>
+  </h1>
+  <p class="lead">人気マシンを確実に体験できるチャンス</p>
+  <a href="#machines" class="hero-cta">▼ マシンを見る</a>
+</section>
+
+<!-- BENEFIT -->
+<section class="benefit">
+  <div class="container fade-in">
+    <h2>体験予約特典</h2>
+    <div class="benefit-image"><img src="images/benefit-pack.png" alt="ベイビーエクソフェイスパック 3枚プレゼント" loading="lazy"></div>
+    <p>※体験予約をされた方限定の特典です</p>
+  </div>
+</section>
+
+<!-- MACHINES -->
+<section class="machines" id="machines">
+  <div class="container">
+
+    <div class="machine-grid">
+      <!-- Plasmania -->
+      <a href="plasmania.html" class="machine-card fade-in">
+        <div class="body">
+          <div class="machine-header">
+            <div class="machine-header-text">
+              <span class="machine-tag">SKIN CARE</span>
+              <p class="sub">肌管理マシンなら</p>
+              <h3>plasmania</h3>
+              <span class="jp-name">プラズマニア</span>
+            </div>
+            <div class="machine-image"><img src="images/plasmania-machine.webp" alt="plasmania マシン" loading="lazy"></div>
+          </div>
+          <p>真皮層までアプローチ可能なプラズマ照射で、ニキビ・シミ・毛穴・クレーターまで根本ケア。100年使える肌を育てる先進マシン。</p>
+          <div class="ba-slider">
+            <div class="ba-slide"><img src="images/plasmania-ba/01.png" alt="plasmania ビフォアフ 1" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/02.png" alt="plasmania ビフォアフ 2" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/03.png" alt="plasmania ビフォアフ 3" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/04.png" alt="plasmania ビフォアフ 4" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/05.png" alt="plasmania ビフォアフ 5" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/06.png" alt="plasmania ビフォアフ 6" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/07.png" alt="plasmania ビフォアフ 7" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/08.png" alt="plasmania ビフォアフ 8" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/09.png" alt="plasmania ビフォアフ 9" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/10.png" alt="plasmania ビフォアフ 10" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/11.png" alt="plasmania ビフォアフ 11" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/12.png" alt="plasmania ビフォアフ 12" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/13.png" alt="plasmania ビフォアフ 13" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/14.png" alt="plasmania ビフォアフ 14" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/15.png" alt="plasmania ビフォアフ 15" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/16.png" alt="plasmania ビフォアフ 16" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/17.png" alt="plasmania ビフォアフ 17" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/18.png" alt="plasmania ビフォアフ 18" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/19.png" alt="plasmania ビフォアフ 19" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/20.png" alt="plasmania ビフォアフ 20" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/plasmania-ba/21.png" alt="plasmania ビフォアフ 21" loading="lazy"></div>
+            <span class="ba-label">BEFORE / AFTER</span>
+          </div>
+          <span class="machine-link">plasmaniaの詳細をみる →</span>
+        </div>
+      </a>
+
+      <!-- it Lift -->
+      <a href="itlift.html" class="machine-card fade-in">
+        <div class="body">
+          <div class="machine-header">
+            <div class="machine-header-text">
+              <span class="machine-tag">LIFT UP</span>
+              <p class="sub">たるみケアなら</p>
+              <h3>it Lift</h3>
+              <span class="jp-name">イットリフト</span>
+            </div>
+            <div class="machine-image"><img src="images/itlift-machine.png" alt="it Lift マシン" loading="lazy"></div>
+          </div>
+          <p>高周波と並行ビーム型超音波を搭載した次世代型リフトアップマシン。たるみケアと美肌づくりが一台で叶う、まるで糸リフトの引き上げ感。</p>
+          <div class="ba-slider">
+            <div class="ba-slide"><img src="images/itlift-ba/01.png" alt="it Lift ビフォアフ 1" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/itlift-ba/02.png" alt="it Lift ビフォアフ 2" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/itlift-ba/03.png" alt="it Lift ビフォアフ 3" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/itlift-ba/04.png" alt="it Lift ビフォアフ 4" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/itlift-ba/05.png" alt="it Lift ビフォアフ 5" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/itlift-ba/06.png" alt="it Lift ビフォアフ 6" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/itlift-ba/07.png" alt="it Lift ビフォアフ 7" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/itlift-ba/08.png" alt="it Lift ビフォアフ 8" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/itlift-ba/09.png" alt="it Lift ビフォアフ 9" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/itlift-ba/10.png" alt="it Lift ビフォアフ 10" loading="lazy"></div>
+            <div class="ba-slide"><img src="images/itlift-ba/11.png" alt="it Lift ビフォアフ 11" loading="lazy"></div>
+            <span class="ba-label">BEFORE / AFTER</span>
+          </div>
+          <span class="machine-link">it Liftの詳細をみる →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- EVENT INFO -->
+<section class="event-info">
+  <div class="container fade-in">
+    <h2>BWJ TOKYO 2026</h2>
+    <p class="date">5／18（月）〜 20（水）</p>
+    <p class="location">ホール西2 ／ ブース番号 J007<br>URURIA</p>
+  </div>
+</section>
+
+<!-- BOOTH PHOTO -->
+<section class="booth-section">
+  <div class="container fade-in">
+    <h2>BWJ会場でお会いしましょう</h2>
+    <div class="booth-image"><img src="images/booth.png" alt="URURIA ブース" loading="lazy"></div>
+    <p class="caption">ホール西2 ／ J007 ／ URURIA</p>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section class="reservation" id="reservation">
+  <div class="container fade-in">
+    <h2>体験事前予約をご希望の方へ</h2>
+    <p>
+      インスタグラムDMより<br>
+      <span class="keyword">【BWJ体験希望】</span><br>
+      と一言お送りください。<br>
+      個別に受付いたします！
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="brand">URURIA</div>
+  <div>© 2026 URURIA. All rights reserved.</div>
+</footer>
+
+<script>
+const io=new IntersectionObserver((es)=>{
+  es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})
+},{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>io.observe(el));
+
+// before/after auto slider (variable slide count)
+document.querySelectorAll('.ba-slider').forEach(slider=>{
+  const slides=slider.querySelectorAll('.ba-slide');
+  if(!slides.length)return;
+  // set blurred backdrop from each slide's image
+  slides.forEach(s=>{
+    const img=s.querySelector('img');
+    if(img&&img.getAttribute('src')){
+      s.style.setProperty('--bg',`url("${img.getAttribute('src')}")`);
+    }
+  });
+  let i=0;
+  slides[0].classList.add('active');
+  setInterval(()=>{
+    slides[i].classList.remove('active');
+    i=(i+1)%slides.length;
+    slides[i].classList.add('active');
+  },3200);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>it Lift（イットリフト） | BWJ東京2026 体験事前予約 - URURIA</title>
+<meta name="description" content="次世代型リフトアップマシン it Lift（イットリフト）。BWJ東京2026の体験事前予約受付中。高周波と並行ビーム型超音波で、たるみケアと美肌づくりを一台で。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Noto Sans JP',sans-serif;
+  color:#1a1a1a;
+  background:#fff;
+  line-height:1.85;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  font-size:15px;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+:root{
+  --pink:#ec3a87;
+  --pink-soft:#ffe4ef;
+  --pink-light:#fff5f9;
+  --black:#1a1a1a;
+  --gray:#666;
+  --line:#eee;
+}
+
+/* ========== HEADER ========== */
+header{
+  position:fixed;
+  top:0;left:0;right:0;
+  z-index:100;
+  padding:14px 20px;
+  background:rgba(255,255,255,0.92);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+header .logo{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:700;
+  color:var(--black);
+  letter-spacing:0.25em;
+  font-size:18px;
+}
+header .back{
+  font-size:11px;
+  color:var(--gray);
+  letter-spacing:0.05em;
+}
+
+/* ========== HERO ========== */
+.hero{
+  position:relative;
+  padding:80px 22px 50px;
+  text-align:center;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% 20%,var(--pink-soft),transparent 70%),
+    linear-gradient(180deg,#fff,var(--pink-light));
+  overflow:hidden;
+}
+.hero-tag{
+  display:inline-block;
+  font-family:'Cormorant Garamond',serif;
+  font-size:12px;
+  letter-spacing:0.28em;
+  color:var(--pink);
+  margin-bottom:24px;
+  font-weight:700;
+}
+.hero-tag::before,.hero-tag::after{
+  content:"";
+  display:inline-block;
+  width:28px;
+  height:1px;
+  background:var(--pink);
+  vertical-align:middle;
+  margin:0 12px;
+}
+.hero h1{
+  font-size:22px;
+  font-weight:900;
+  line-height:1.55;
+  margin-bottom:18px;
+  color:var(--black);
+  letter-spacing:0.01em;
+  word-break:keep-all;
+  overflow-wrap:break-word;
+}
+.hero h1 .pink{color:var(--pink)}
+.hero h1 .en{
+  display:block;
+  font-family:'Cormorant Garamond',serif;
+  font-size:0.55em;
+  font-weight:600;
+  letter-spacing:0.1em;
+  margin-top:8px;
+  color:var(--pink);
+}
+.hero p.lead{
+  font-size:13px;
+  color:var(--gray);
+  margin-bottom:34px;
+  line-height:2;
+}
+.hero .machine-image{
+  margin:0 auto 22px;
+  aspect-ratio:16/10;
+  border-radius:18px;
+  background:linear-gradient(135deg,var(--pink-soft),#fff);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+.hero .machine-image img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  padding:18px;
+}
+.hero .ba-slider{
+  margin:0 auto;
+  aspect-ratio:4/3;
+  border-radius:18px;
+  overflow:hidden;
+  background:#fff;
+}
+
+/* before/after slider */
+.ba-slider{
+  position:relative;
+  overflow:hidden;
+}
+.ba-label{
+  position:absolute;
+  top:10px;
+  left:10px;
+  z-index:50;
+  font-family:'Cormorant Garamond',serif;
+  font-size:9px;
+  letter-spacing:0.14em;
+  padding:4px 11px;
+  background:var(--pink);
+  color:#fff;
+  border-radius:50px;
+  font-weight:700;
+  box-shadow:0 2px 8px rgba(0,0,0,0.18);
+  pointer-events:none;
+}
+.ba-slide{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  transition:opacity .8s ease;
+  background:linear-gradient(135deg,var(--pink-soft),#fff);
+}
+.ba-slide.active{opacity:1}
+.ba-slide img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* ========== SECTION ========== */
+section{padding:48px 22px;position:relative}
+.container{max-width:560px;margin:0 auto}
+.section-title{
+  text-align:center;
+  font-size:23px;
+  font-weight:900;
+  line-height:1.55;
+  margin-bottom:30px;
+  color:var(--black);
+}
+.section-title small{
+  display:block;
+  font-family:'Cormorant Garamond',serif;
+  font-size:14px;
+  color:var(--pink);
+  letter-spacing:0.28em;
+  margin-bottom:10px;
+  font-weight:700;
+}
+.section-title .pink{color:var(--pink)}
+
+/* ========== TROUBLES ========== */
+.troubles{
+  background:var(--pink-light);
+}
+.trouble-list{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:0;
+}
+.trouble-list li{
+  list-style:none;
+  padding:16px 18px 16px 36px;
+  font-size:14px;
+  position:relative;
+  border-bottom:1px solid rgba(236,58,135,0.18);
+  color:var(--black);
+}
+.trouble-list li::before{
+  content:"✓";
+  position:absolute;
+  left:8px;
+  top:50%;
+  transform:translateY(-50%);
+  color:var(--pink);
+  font-weight:900;
+  font-size:16px;
+}
+.troubles-msg{
+  margin:42px auto 0;
+  text-align:center;
+  font-size:15px;
+  color:var(--black);
+  line-height:2.05;
+}
+.troubles-msg .pink{color:var(--pink);font-weight:900}
+
+/* ========== SYMPTOMS ========== */
+.symptoms{
+  background:var(--black);
+  color:#fff;
+  text-align:center;
+}
+.symptoms .section-title{color:#fff}
+.symptoms .section-title small{color:var(--pink)}
+.symptoms-tags{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:8px 6px;
+  margin-bottom:38px;
+}
+.symptoms-tags span{
+  display:inline-block;
+  padding:6px 4px;
+  font-size:15px;
+  font-weight:700;
+  color:#fff;
+  letter-spacing:0.05em;
+}
+.symptoms-tags span:not(:last-child)::after{
+  content:"／";
+  margin-left:8px;
+  color:var(--pink);
+  font-weight:400;
+}
+.symptoms .ba-slider{
+  margin:24px auto 0;
+  aspect-ratio:16/10;
+  border-radius:18px;
+  overflow:hidden;
+  background:#0a0a0a;
+}
+.symptoms .ba-slide{
+  background:linear-gradient(135deg,rgba(236,58,135,0.22),rgba(255,255,255,0.06));
+  color:rgba(255,255,255,0.75);
+}
+
+/* ========== FEATURES ========== */
+.features{
+  background:#fff;
+}
+.feature-block{
+  margin:0 auto 50px;
+  position:relative;
+}
+.feature-block:last-child{margin-bottom:0}
+.feature-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:13px;
+  letter-spacing:0.28em;
+  color:var(--pink);
+  margin-bottom:12px;
+  font-weight:700;
+}
+.feature-num::after{
+  content:"";
+  display:inline-block;
+  width:60px;
+  height:1px;
+  background:linear-gradient(90deg,var(--pink),transparent);
+  vertical-align:middle;
+  margin-left:14px;
+}
+.feature-block h3{
+  font-size:19px;
+  font-weight:900;
+  line-height:1.55;
+  margin-bottom:14px;
+  color:var(--black);
+}
+.feature-block p{
+  font-size:14px;
+  color:var(--gray);
+  line-height:1.95;
+}
+.feature-block ul{
+  padding:0;
+  margin-top:14px;
+  list-style:none;
+}
+.feature-block ul li{
+  padding:7px 0 7px 22px;
+  position:relative;
+  font-size:14px;
+  color:var(--black);
+}
+.feature-block ul li::before{
+  content:"●";
+  position:absolute;
+  left:0;
+  top:8px;
+  color:var(--pink);
+  font-size:9px;
+}
+
+/* ========== ALL-IN-ONE ========== */
+.all-in-one{
+  background:var(--pink-light);
+}
+.aio-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px 12px;
+}
+.aio-item{
+  padding:6px 4px;
+  text-align:center;
+  font-size:13px;
+  font-weight:700;
+  color:var(--black);
+  line-height:1.5;
+}
+.aio-item .num{
+  display:block;
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;
+  color:var(--pink);
+  margin-bottom:4px;
+  font-weight:700;
+}
+.aio-image{
+  margin:36px auto 0;
+  aspect-ratio:16/10;
+  border-radius:18px;
+  overflow:hidden;
+  background:linear-gradient(135deg,var(--pink-soft),#fff);
+}
+.aio-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* ========== SAFETY ========== */
+.safety{
+  background:#fff;
+  text-align:center;
+}
+.safety h3{
+  font-size:20px;
+  font-weight:900;
+  line-height:1.6;
+  margin-bottom:18px;
+  color:var(--black);
+}
+.safety h3 .pink{color:var(--pink)}
+.safety p{
+  font-size:14px;
+  color:var(--gray);
+  line-height:2.05;
+  max-width:480px;
+  margin:0 auto;
+}
+
+/* ========== EXPERIENCE ========== */
+.experience{
+  background:var(--black);
+  color:#fff;
+  text-align:center;
+}
+.experience .section-title{color:#fff}
+.experience .section-title small{color:var(--pink)}
+.experience-list{
+  text-align:left;
+  list-style:none;
+}
+.experience-list li{
+  padding:14px 0 14px 28px;
+  border-bottom:1px solid rgba(255,255,255,0.15);
+  font-size:14px;
+  position:relative;
+}
+.experience-list li::before{
+  content:"●";
+  position:absolute;
+  left:0;
+  top:16px;
+  color:var(--pink);
+  font-size:10px;
+}
+.experience .closing{
+  margin-top:28px;
+  font-size:14px;
+  color:rgba(255,255,255,0.75);
+}
+
+/* ========== RESERVATION ========== */
+.reservation{
+  background:
+    radial-gradient(ellipse at top,var(--pink-soft),transparent 60%),
+    var(--pink-light);
+  text-align:center;
+}
+.reservation h2{
+  font-size:23px;
+  font-weight:900;
+  line-height:1.55;
+  margin-bottom:32px;
+  color:var(--black);
+}
+.reservation h2 .pink{color:var(--pink)}
+.reservation .en{
+  font-family:'Cormorant Garamond',serif;
+  font-size:13px;
+  color:var(--pink);
+  letter-spacing:0.28em;
+  margin-bottom:14px;
+  display:block;
+  font-weight:700;
+}
+.benefit-mini{
+  margin:24px auto 28px;
+}
+.benefit-mini p{
+  font-size:14px;
+  line-height:1.95;
+  margin-bottom:16px;
+  color:var(--black);
+}
+.benefit-mini p strong{color:var(--pink);font-weight:900}
+.benefit-mini .img-ph{
+  border-radius:14px;
+  overflow:hidden;
+  max-width:380px;
+  margin:0 auto;
+}
+.benefit-mini .img-ph img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.symptoms-image{
+  margin:30px auto 0;
+  border-radius:18px;
+  overflow:hidden;
+  max-width:340px;
+}
+.symptoms-image img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.experience-image{
+  margin:30px auto 0;
+  border-radius:18px;
+  overflow:hidden;
+  max-width:560px;
+}
+.experience-image img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.booth-section{
+  background:#fff;
+  text-align:center;
+}
+.booth-image{
+  border-radius:18px;
+  overflow:hidden;
+  margin:0 auto;
+  max-width:560px;
+}
+.booth-image img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.booth-section .caption{
+  margin-top:18px;
+  font-size:13px;
+  color:var(--gray);
+  letter-spacing:0.04em;
+}
+.event-info-mini{
+  margin:30px auto;
+  padding:24px 0;
+  border-top:1px solid rgba(236,58,135,0.25);
+  border-bottom:1px solid rgba(236,58,135,0.25);
+}
+.event-info-mini .name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:14px;
+  letter-spacing:0.25em;
+  color:var(--pink);
+  margin-bottom:8px;
+  font-weight:700;
+}
+.event-info-mini .date{
+  font-size:22px;
+  font-weight:900;
+  color:var(--black);
+}
+.event-info-mini .loc{
+  font-size:12px;
+  color:var(--gray);
+  margin-top:8px;
+  letter-spacing:0.04em;
+}
+.reservation-method{
+  margin-top:24px;
+  font-size:14px;
+  line-height:2.05;
+  color:var(--gray);
+}
+.reservation-method .lead-text{
+  font-weight:700;
+  font-size:14px;
+  margin-bottom:8px;
+  color:var(--black);
+  display:block;
+}
+.reservation-method .keyword{
+  display:inline-block;
+  padding:2px 14px;
+  background:linear-gradient(90deg,var(--pink-soft),#fff);
+  color:var(--pink);
+  border-radius:6px;
+  font-weight:900;
+  margin:6px 0;
+  letter-spacing:0.05em;
+}
+
+/* ========== DOCUMENT REQUEST ========== */
+.document{
+  background:#fff;
+  text-align:center;
+}
+.document h2{
+  font-size:21px;
+  font-weight:900;
+  margin-bottom:14px;
+  color:var(--black);
+}
+.document p{
+  font-size:13px;
+  color:var(--gray);
+  margin-bottom:28px;
+  line-height:1.95;
+}
+.document-cta{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  width:100%;
+  max-width:340px;
+  margin:18px auto 0;
+  padding:18px 22px;
+  font-weight:800;
+  font-size:15px;
+  color:#fff;
+  background:linear-gradient(90deg,#ff4d9d 0%,#b89cd6 100%);
+  border-radius:50px;
+  letter-spacing:0.04em;
+  box-shadow:0 8px 28px rgba(255,77,157,0.4);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.document-cta:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 34px rgba(255,77,157,0.5);
+}
+
+/* ========== FAQ ========== */
+.faq{
+  background:var(--pink-light);
+}
+.faq-list{margin:0 auto}
+.faq-item{
+  margin-bottom:0;
+  border-bottom:1px solid rgba(236,58,135,0.22);
+}
+.faq-item summary{
+  list-style:none;
+  cursor:pointer;
+  padding:20px 36px 20px 36px;
+  font-weight:700;
+  font-size:14px;
+  position:relative;
+  color:var(--black);
+  line-height:1.65;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::before{
+  content:"Q.";
+  position:absolute;
+  left:0;
+  top:20px;
+  color:var(--pink);
+  font-family:'Cormorant Garamond',serif;
+  font-size:16px;
+  font-weight:900;
+}
+.faq-item summary::after{
+  content:"+";
+  position:absolute;
+  right:6px;
+  top:50%;
+  transform:translateY(-50%);
+  color:var(--pink);
+  font-size:22px;
+  font-weight:300;
+  transition:transform .3s;
+}
+.faq-item[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq-item .answer{
+  padding:0 36px 22px 36px;
+  font-size:13px;
+  line-height:1.95;
+  color:var(--gray);
+  position:relative;
+}
+.faq-item .answer::before{
+  content:"A.";
+  position:absolute;
+  left:0;
+  top:0;
+  color:var(--pink);
+  font-family:'Cormorant Garamond',serif;
+  font-size:16px;
+  font-weight:900;
+  opacity:0.6;
+}
+.faq-item .answer ul{
+  padding:8px 0 0 16px;
+  margin-top:8px;
+}
+.faq-item .answer ul li{
+  list-style:disc;
+  margin-bottom:4px;
+}
+
+/* ========== FOOTER ========== */
+footer{
+  background:var(--black);
+  padding:40px 20px 28px;
+  text-align:center;
+  font-size:11px;
+  color:rgba(255,255,255,0.6);
+}
+footer .brand{
+  font-family:'Cormorant Garamond',serif;
+  font-size:20px;
+  color:#fff;
+  letter-spacing:0.32em;
+  margin-bottom:14px;
+  font-weight:700;
+}
+footer .nav{
+  margin-bottom:18px;
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
+footer .nav a{font-size:11px;color:rgba(255,255,255,0.7)}
+
+/* fade-in */
+.fade-in{
+  opacity:0;
+  transform:translateY(20px);
+  transition:opacity .8s,transform .8s;
+}
+.fade-in.show{opacity:1;transform:translateY(0)}
+
+/* ========== TABLET / DESKTOP ========== */
+@media(min-width:768px){
+  body{font-size:16px}
+  header{padding:16px 28px}
+  header .logo{font-size:20px}
+  header .back{font-size:13px}
+  .hero{padding:110px 30px 70px}
+  .hero h1{font-size:38px;margin-bottom:24px}
+  .hero h1 .en{font-size:0.5em}
+  .hero p.lead{font-size:16px;margin-bottom:42px}
+  .hero-tag{font-size:14px;margin-bottom:32px}
+  section{padding:72px 30px}
+  .container{max-width:760px}
+  .section-title{font-size:32px;margin-bottom:42px}
+  .section-title small{font-size:16px}
+  .trouble-list{grid-template-columns:1fr 1fr;gap:0 30px}
+  .trouble-list li{font-size:15px;padding:18px 18px 18px 38px}
+  .symptoms-tags span{font-size:18px}
+  .feature-block{margin-bottom:64px}
+  .feature-block h3{font-size:24px}
+  .feature-block p,.feature-block ul li{font-size:15px}
+  .aio-grid{grid-template-columns:repeat(4,1fr);gap:24px 14px}
+  .aio-item{font-size:15px}
+  .aio-item .num{font-size:26px}
+  .safety h3{font-size:26px}
+  .safety p{font-size:15px}
+  .experience-list li{font-size:15px;padding:16px 0 16px 32px}
+  .experience-list li::before{top:18px}
+  .reservation h2{font-size:32px}
+  .event-info-mini .date{font-size:28px}
+  .document h2{font-size:28px}
+  .faq-item summary{font-size:16px;padding:24px 40px 24px 40px}
+  .faq-item summary::before{top:24px;font-size:18px}
+  .faq-item .answer{padding:0 40px 26px 40px;font-size:14px}
+  .faq-item .answer::before{font-size:18px}
+}
+@media(min-width:1080px){
+  .container{max-width:1080px}
+  .hero h1{font-size:48px}
+  .hero .machine-image,.hero .ba-slider{max-width:680px}
+  .section-title{font-size:36px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">URURIA</a>
+  <a href="index.html" class="back">← BWJ TOPに戻る</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="hero-tag">it Lift × BWJ TOKYO 2026</span>
+  <h1>
+    次世代型リフトアップマシン<br>
+    <span class="pink">it Lift</span>（イットリフト）
+    <span class="en">— Next Lift Up Machine —</span>
+  </h1>
+  <p class="lead">
+    高周波と並行ビーム型超音波を搭載。<br>
+    たるみはもちろんのこと、使う度に<br>
+    美肌を作れる一石二鳥のマシン！
+  </p>
+
+  <!-- マシン画像 -->
+  <div class="machine-image"><img src="images/itlift-machine.png" alt="it Lift マシン" loading="lazy"></div>
+
+  <!-- ビフォアフ自動スライド -->
+  <div class="ba-slider">
+    <div class="ba-slide"><img src="images/itlift-ba/01.png" alt="it Lift ビフォアフ 1" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/itlift-ba/02.png" alt="it Lift ビフォアフ 2" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/itlift-ba/03.png" alt="it Lift ビフォアフ 3" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/itlift-ba/04.png" alt="it Lift ビフォアフ 4" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/itlift-ba/05.png" alt="it Lift ビフォアフ 5" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/itlift-ba/06.png" alt="it Lift ビフォアフ 6" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/itlift-ba/07.png" alt="it Lift ビフォアフ 7" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/itlift-ba/08.png" alt="it Lift ビフォアフ 8" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/itlift-ba/09.png" alt="it Lift ビフォアフ 9" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/itlift-ba/10.png" alt="it Lift ビフォアフ 10" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/itlift-ba/11.png" alt="it Lift ビフォアフ 11" loading="lazy"></div>
+    <span class="ba-label">BEFORE / AFTER</span>
+  </div>
+</section>
+
+<!-- TROUBLES -->
+<section class="troubles">
+  <div class="container">
+    <h2 class="section-title fade-in">it Liftはこんな<br>サロンオーナー様に<br>選ばれています</h2>
+    <ul class="trouble-list fade-in">
+      <li>ハイフに代わる機械を探している</li>
+      <li>お客さまのたるみをなんとかしたい…</li>
+      <li>新規やリピート獲得に苦戦している</li>
+      <li>新しい、話題性のあるメニューを導入したい</li>
+      <li>即効性がある施術を探している</li>
+      <li>他店との差別化に悩んでいる</li>
+      <li>客単価を上げていきたい</li>
+      <li>リピート率を上げたい！</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SYMPTOMS -->
+<section class="symptoms">
+  <div class="container">
+    <h2 class="section-title fade-in">it Liftで対応できるお悩み</h2>
+    <div class="symptoms-tags fade-in">
+      <span>たるみ</span>
+      <span>二重あご</span>
+      <span>ほうれい線</span>
+      <span>口横のぽにょ</span>
+      <span>シワ</span>
+      <span>くすみ</span>
+    </div>
+    <div class="symptoms-image fade-in"><img src="images/itlift-symptoms.png" alt="it Liftで対応できる悩み 部位図解" loading="lazy"></div>
+    <div class="ba-slider fade-in">
+      <div class="ba-slide"><img src="images/itlift-ba/01.png" alt="it Lift ビフォアフ 1" loading="lazy"></div>
+      <div class="ba-slide"><img src="images/itlift-ba/02.png" alt="it Lift ビフォアフ 2" loading="lazy"></div>
+      <div class="ba-slide"><img src="images/itlift-ba/03.png" alt="it Lift ビフォアフ 3" loading="lazy"></div>
+      <div class="ba-slide"><img src="images/itlift-ba/04.png" alt="it Lift ビフォアフ 4" loading="lazy"></div>
+      <div class="ba-slide"><img src="images/itlift-ba/05.png" alt="it Lift ビフォアフ 5" loading="lazy"></div>
+      <div class="ba-slide"><img src="images/itlift-ba/06.png" alt="it Lift ビフォアフ 6" loading="lazy"></div>
+      <div class="ba-slide"><img src="images/itlift-ba/07.png" alt="it Lift ビフォアフ 7" loading="lazy"></div>
+      <div class="ba-slide"><img src="images/itlift-ba/08.png" alt="it Lift ビフォアフ 8" loading="lazy"></div>
+      <div class="ba-slide"><img src="images/itlift-ba/09.png" alt="it Lift ビフォアフ 9" loading="lazy"></div>
+      <div class="ba-slide"><img src="images/itlift-ba/10.png" alt="it Lift ビフォアフ 10" loading="lazy"></div>
+      <div class="ba-slide"><img src="images/itlift-ba/11.png" alt="it Lift ビフォアフ 11" loading="lazy"></div>
+      <span class="ba-label">BEFORE / AFTER</span>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="container">
+    <h2 class="section-title fade-in">まるで糸リフト！？<br>it Lift <span class="pink">結果だしの秘密</span></h2>
+
+    <div class="feature-block fade-in">
+      <div class="feature-num">FEATURE 01</div>
+      <h3>デザインするように<br>引き上げが可能</h3>
+      <p>３つのアタッチメントでただリフトアップするだけじゃない。一人一人の肌に合わせ、カスタマイズが可能。レベルの調節もタッチパネルで自由自在。</p>
+      <ul>
+        <li>3種のアタッチメントで自在に調整</li>
+        <li>肌に合わせたカスタマイズ施術</li>
+        <li>タッチパネルで直感操作</li>
+      </ul>
+    </div>
+
+    <div class="feature-block fade-in">
+      <div class="feature-num">FEATURE 02</div>
+      <h3>たるみだけじゃない！<br>使う度に美肌へ</h3>
+      <p>リフトハンドルの温熱効果と並行ビーム型超音波、エレクトロポレーションハンドルでの美容液導入で、コラーゲンやエラスチンを活性。小ジワや肌のくすみにも効果抜群です。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ALL IN ONE -->
+<section class="all-in-one">
+  <div class="container">
+    <h2 class="section-title fade-in">１台でこんなにすごい<br><span class="pink">it Lift</span></h2>
+    <div class="aio-grid fade-in">
+      <div class="aio-item"><span class="num">01</span>たるみ</div>
+      <div class="aio-item"><span class="num">02</span>ちりめんジワ</div>
+      <div class="aio-item"><span class="num">03</span>コラーゲン<br>エラスチン生成</div>
+      <div class="aio-item"><span class="num">04</span>二重あご</div>
+      <div class="aio-item"><span class="num">05</span>額・眉間のシワ</div>
+      <div class="aio-item"><span class="num">06</span>毛穴</div>
+      <div class="aio-item"><span class="num">07</span>シミ・くすみ</div>
+      <div class="aio-item"><span class="num">08</span>肌のしぼみ</div>
+    </div>
+    <div class="aio-image fade-in"><img src="images/itlift-experience.png" alt="it Lift 体験風景" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- SAFETY -->
+<section class="safety">
+  <div class="container fade-in">
+    <h2 class="section-title">重視したのは、高い<br>「安全性」と「操作性」</h2>
+    <h3>エステガイドラインに準拠した<br><span class="pink">安心設計</span></h3>
+    <p>
+      イットリフトはエステガイドラインを遵守し、従来のハイフ機器のような高密度焦点式超音波ではなく、広い範囲に熱を届ける仕様で冷却も備わり、安全性も◎です。
+    </p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience">
+  <div class="container">
+    <h2 class="section-title fade-in">実際にご自身で<br>施術を受けることで…</h2>
+    <ul class="experience-list fade-in">
+      <li>肌にどんな変化があるのか？</li>
+      <li>熱さや使用感はどうか？</li>
+      <li>サロンメニューに組み合わせられるか？</li>
+      <li>お客様にどう提案できるか？</li>
+      <li>サロンやお客様にどんなプラスの効果が期待できるか？</li>
+    </ul>
+    <p class="closing">…リアルに実感していただけます。</p>
+    <div class="experience-image fade-in"><img src="images/itlift-experience.png" alt="it Lift 体験風景" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section class="reservation" id="reservation">
+  <div class="container fade-in">
+    <h2><span class="pink">it Lift</span>（イットリフト）<br>体験事前予約受付中！</h2>
+
+    <div class="benefit-mini">
+      <p>事前の体験ご予約で<br>大人気の<strong>ベイビーエクソフェイスパックを３枚プレゼント！</strong></p>
+      <div class="img-ph"><img src="images/benefit-pack.png" alt="ベイビーエクソフェイスパック 3枚プレゼント" loading="lazy"></div>
+    </div>
+
+    <div class="event-info-mini">
+      <div class="name">BWJ TOKYO 2026</div>
+      <div class="date">5／18（月）〜 20（水）</div>
+      <div class="loc">ホール西2 ／ J007 ／ URURIA</div>
+    </div>
+
+    <div class="reservation-method">
+      <span class="lead-text">体験事前予約をご希望の方へ</span>
+      インスタグラムDMより<br>
+      <span class="keyword">【BWJ体験希望】</span><br>
+      と一言お送りください。<br>個別に受付いたします！
+    </div>
+  </div>
+</section>
+
+<!-- BOOTH PHOTO -->
+<section class="booth-section">
+  <div class="container fade-in">
+    <h2 class="section-title">BWJ会場でお会いしましょう</h2>
+    <div class="booth-image"><img src="images/booth.png" alt="URURIA / it Lift ブース" loading="lazy"></div>
+    <p class="caption">ホール西2 ／ J007 ／ URURIA</p>
+  </div>
+</section>
+
+<!-- DOCUMENT REQUEST -->
+<section class="document">
+  <div class="container fade-in">
+    <h2>資料請求</h2>
+    <p>it Liftの全国症例や<br>マシーン詳細を知りたい方は<br>資料請求を！</p>
+    <a href="https://lin.ee/Su8wWCV" target="_blank" rel="noopener" class="document-cta">資料請求する →</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <h2 class="section-title fade-in">よくある質問</h2>
+    <div class="faq-list">
+      <details class="faq-item fade-in">
+        <summary>体験は無料ですか？</summary>
+        <div class="answer">はい、無料で体験いただけます。</div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>it Liftは痛いですか？</summary>
+        <div class="answer">痛みはほとんどありません。ほんのりあたたかさを感じる程度で、多くの方がリラックスして受けられています。</div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>マシンは簡単に使いこなせますか？</summary>
+        <div class="answer">it Liftは操作がシンプルで、初めてのスタッフでもすぐに扱えます。</div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>it Liftのメニューの施術単価はいくらくらいですか？</summary>
+        <div class="answer">
+          <ul>
+            <li>フェイスラインのみ ¥12,100</li>
+            <li>ほうれい線コース ¥16,500</li>
+            <li>下半顔コース ¥27,500</li>
+            <li>全顔コース ¥38,500</li>
+          </ul>
+          月額サブスクに組み込むなど、価格設定はサロン様によって様々です。
+        </div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>デメリットや危険性はありますか？</summary>
+        <div class="answer">イットリフトは肌の各層に広く発熱させる高周波と、並行ビーム型超音波という円型状に均一な照射を使用することで、エステガイドラインを遵守しており、安全にお使いいただけます。</div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>ランニングコストは必要ですか？</summary>
+        <div class="answer">カートリッジが１つ１万発 ¥55,000です。１名全顔施術で200ショット〜250ショットを使用しますので、1,000〜1,250円のコストがかかります。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="brand">URURIA</div>
+  <div class="nav">
+    <a href="index.html">BWJ TOP</a>
+    <a href="plasmania.html">plasmania</a>
+    <a href="itlift.html">it Lift</a>
+  </div>
+  <div>© 2026 URURIA. All rights reserved.</div>
+</footer>
+
+<script>
+const io=new IntersectionObserver((es)=>{
+  es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})
+},{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>io.observe(el));
+
+// before/after auto slider (variable slide count)
+document.querySelectorAll('.ba-slider').forEach(slider=>{
+  const slides=slider.querySelectorAll('.ba-slide');
+  if(!slides.length)return;
+  let i=0;
+  slides[0].classList.add('active');
+  setInterval(()=>{
+    slides[i].classList.remove('active');
+    i=(i+1)%slides.length;
+    slides[i].classList.add('active');
+  },3200);
+});
+</script>
+
+</body>
+</html>
