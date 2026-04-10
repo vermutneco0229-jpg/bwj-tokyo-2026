@@ -514,6 +514,80 @@ section{padding:48px 22px}
   letter-spacing:0.06em;
   box-shadow:0 8px 24px rgba(255,77,157,0.45);
 }
+.confirm-form-wrap{
+  max-width:640px;
+  margin:28px auto 0;
+  text-align:center;
+}
+.confirm-form-card{
+  position:relative;
+  padding:30px 22px;
+  background:#1a0a14;
+  border:2px dashed #ff4d9d;
+  border-radius:20px;
+  box-shadow:0 12px 40px rgba(255,77,157,0.25);
+  text-align:center;
+}
+.confirm-form-card::before{
+  content:"FORM";
+  position:absolute;
+  top:-12px;
+  left:50%;
+  transform:translateX(-50%);
+  font-family:'Orbitron',sans-serif;
+  font-size:10px;
+  letter-spacing:0.3em;
+  padding:4px 14px;
+  background:#ff4d9d;
+  color:#fff;
+  border-radius:50px;
+  font-weight:900;
+}
+.confirm-form-card .title{
+  display:inline-block;
+  font-weight:900;
+  font-size:18px;
+  color:#fff;
+  letter-spacing:0.04em;
+  margin-bottom:14px;
+  padding-bottom:10px;
+  border-bottom:2px solid #ff4d9d;
+}
+.confirm-form-card .lead{
+  font-size:14px;
+  line-height:1.9;
+  color:#e8d8f0;
+  margin-bottom:22px;
+}
+.confirm-form-card .form-btns{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  align-items:center;
+}
+.confirm-form-card .form-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  width:100%;
+  max-width:320px;
+  padding:16px 22px;
+  font-weight:900;
+  font-size:14px;
+  color:#1a0a14;
+  background:#fff;
+  border-radius:50px;
+  letter-spacing:0.04em;
+  box-shadow:0 8px 24px rgba(255,255,255,0.25);
+  transition:transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+}
+.confirm-form-card .form-btn:hover{
+  transform:translateY(-2px);
+  background:#ff4d9d;
+  color:#fff;
+  box-shadow:0 12px 30px rgba(255,77,157,0.55);
+}
 
 /* ========== FOOTER ========== */
 footer{
@@ -703,6 +777,17 @@ footer .brand{
       と一言お送りください。<br>
       個別に受付いたします！
     </p>
+  </div>
+
+  <div class="confirm-form-wrap fade-in">
+    <div class="confirm-form-card">
+      <span class="title">事前確認フォーム</span>
+      <p class="lead">事前にマシンの体験予約をされた方は、<br>以下のフォームにご記入をお願いいたします。</p>
+      <div class="form-btns">
+        <a href="https://forms.gle/ukmVcEuqmWMUYms68" target="_blank" rel="noopener" class="form-btn">it Lift 事前確認フォーム →</a>
+        <a href="https://forms.gle/v55ryAqaVdW6vz3t5" target="_blank" rel="noopener" class="form-btn">plasmania 事前確認フォーム →</a>
+      </div>
+    </div>
   </div>
 </section>
 
